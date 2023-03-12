@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Account</title>
+
+    <style>
+        .divider{
+            position: relative;
+            text-align: center;
+            margin: 10px 0px;
+        }
+        .divider span{
+            padding: 10px;
+            position: relative;
+            font-size: 10px;
+            z-index: 2 !important;
+        }
+        .divider:after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            border-bottom: 2px solid #ddd;
+            top: 50%;
+            left: 0;
+            
+
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  </head>
+  <body>
+    <!--Going to start sign up design -->
+    <div class="container">
+        <div class="card bg-light">
+            <div class="card-body mx-auto">
+                <h4 class="card-title mt-3 text-center">
+                    Create Account
+                </h4>
+                <p class="text-center">Get Started to Knowing me step by step ....</p>
+               <a href="https://www.google.com/" class = "btn btn-block btn-danger">
+                <i class="fab fa-google ml-6"></i>
+                Login via Google</a>
+
+                <a href="https://www.facebook.com/" class="btn btn-block btn-primary">
+                <i class="fab fa-facebook-f ml-6"></i>    
+                Login via Facebook</a>
+
+                <p class="divider">
+                    <span class="bg-light">
+                        OR
+                    </span>
+                </p>
+
+                <!-- form started -->
+
+                <form action="#1">
+                    <!-- name feild -->
+                    <div class="form-group input-group">
+                        <div class = "input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-user"></i>
+                            </span>
+                        </div>
+                        <input 
+                            type="text"
+                            class="form-control"
+                            id="exampleInputEmail"
+                            aria-activedescendant="emailHelp"
+                            placeholder="Enter Name"
+                        />
+
+                    </div>
+
+                    <!-- email feild -->
+
+                    <div class="form-group input-group">
+                        <div class = "input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                        </div>
+                        <input 
+                            type="email"
+                            class="form-control"
+                            id="exampleInputEmail"
+                            aria-describedby="emailHelp"
+                            placeholder="Enter Email"
+                        />
+
+                    </div>
+
+                    <!-- phone feild -->
+                    <div class="form-group input-group">
+                        <div class = "input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-phone"></i>
+                            </span>
+                        </div>
+                        <select class="custom-select " style = "max-width: 90px;">
+                            <option >+91</option>
+                            <option >+67</option>
+                            <option >+89</option>
+                            <option >+45</option>
+                            <option >+98</option>
+                            <option >+78</option>
+                        </select>
+
+                        <input type="number" class="phone-control" placeholder="Enter Phone"/>
+                    </div>
+
+                    <!-- teacher select -->
+                    <div class="form-group input-group">
+                        <div class = "input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-building"></i>
+                            </span>
+                        </div>
+                        <select class="form-control">
+                            <option selected disabled>--Select User Type--</option>
+                            <option>Teacher</option>
+                            <option>Student</option>
+                            <option>Admin</option>
+                        </select>
+
+                    </div>
+
+                     <!-- password feild -->
+
+                     <div class="form-group input-group">
+                        <div class = "input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-lock"></i>
+                            </span>
+                        </div>
+                        <input 
+                            type="password"
+                            class="form-control"
+                            id="exampleInputEmail"
+                            aria-describedby="emailHelp"
+                            placeholder="Enter Password"
+                        />
+
+                    </div>
+
+
+                     <!-- repeat password feild -->
+
+                     <div class="form-group input-group">
+                        <div class = "input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-unlock"></i>
+                            </span>
+                        </div>
+                        <input 
+                            type="password"
+                            class="form-control"
+                            id="exampleInputEmail"
+                            aria-describedby="emailHelp"
+                            placeholder="Confirm Password"
+                        />
+
+                    </div>
+
+                    <a href="#!" class="btn btn-block btn-primary">Create Account</a>
+
+                    <p class="text-center mt-3">Have an account? <a href="#"> Log In </a></p>
+
+
+
+
+
+                </form>
+                <!-- form ended -->
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  </body>
+</html>
